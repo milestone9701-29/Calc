@@ -27,8 +27,14 @@ public class Calc {
 	}
 	double remainder(double a, double b) {
 		if (b==0) throw new ArithmeticException("0으로 나눌 수 없어요."); // 예외처리 !
-		double r = a%b;
-		if (r<0) r=-r;
+        // a=bq+r에서 a%b 연산 시 피제수 a가 음수라면 나머지 또한 음수로 출력.
+        double aB = Math.abs(b); // 절댓값(범위 : (-aB,+aB)) a= -3 b=5 -3 = 5(-1)+c
+        double r = a%aB;
+        if (r < 0) r += aB; // r=r+aB;
+        if (r >= aB) r -= aB; // r=r-aB;
+        if (r==0.0) r=0.0; // -0.0, +0.0 : IEEE 754 : '마지막 부호 비트에 1 찍힘 -> 부호 있는 0'
+        // boolean isNegZero = Double.doubleToRawLongBits(r) == Double.doubleToRawLongBits(-0.0);
+
 		results.add(r);
 		return r;
 	}
