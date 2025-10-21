@@ -1,8 +1,7 @@
 package V3;
 
 import java.util.*;
-import java.util.stream.Collectors;
-// * : 하위 패키지까지 포함하지 않는다.
+import java.util.stream.Collectors; // * : 하위 패키지까지 포함하지 않는다.
 
 public class Calculator<T extends Number> {
     // ArrayList
@@ -36,7 +35,6 @@ public class Calculator<T extends Number> {
         return Collections.unmodifiableList(results); // Read 전용 View : 외부에서 add, remove X
     }
     // 스냅샷 : return List.copyOf(results);
-
 
     public void clearAll() {
         results.clear();

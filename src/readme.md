@@ -14,7 +14,14 @@
 - 연산 결과를 저장, 삭제, 출력. : ArrayList<Double>
 - 캡슐화 : Getter, Setter 적용.
 
-### 사용법
+#### 3. V3
+입력 검증 : InputHandle
+계산 : Calculator
+흐름 제어. : CalcMain
+연산자 관리 : OperatorType
+- 기준값 관련
+
+### 사용법 : V2 기준
 #### 1. CLI
 
 ```
@@ -32,6 +39,7 @@ JDK 17 설정 후 CalcMain
 2. 연산 결과 History : 저장, 조회, 삭제 : 가장 오래된, 가장 최근, 인덱스 지정 삭제
 3. 입력 검증 : 숫자/연산자, exit로 종료.
 4. 예외 처리: 0으로 나누기(ArithmeticException e), 형식 오류(NumberFormatException e) : catch 구문.
+5. 기준값 비교.
 
 ### 분류
 ```
