@@ -15,11 +15,11 @@
 - 캡슐화 : Getter, Setter 적용.
 
 #### 3. V3
-입력 검증 : InputHandle
-계산 : Calculator
-흐름 제어. : CalcMain
-연산자 관리 : OperatorType
-- 기준값 관련
+- 입력 검증 : InputHandle
+- 계산 : Calculator
+- 흐름 제어. : CalcMain
+- 연산자 관리 : OperatorType
+- 기준값 관련 기능 추가
 
 ### 사용법 : V2 기준
 #### 1. CLI
