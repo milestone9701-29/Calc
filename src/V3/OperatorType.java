@@ -44,9 +44,9 @@ public enum OperatorType { // enum : , 끝에 ; 잊지말 것.
     };
 
     private final char symbol;
-    OperatorType(char symbol) { this.symbol = symbol; }
     // enum 생성자 : private. 상수 선언 시 호출.
     // 매개변수 symbol(지역 변수)을 필드 this.symbol에 대입. : add처럼 상수 만들 때 생성자 호출되어 symbol 설정.
+    OperatorType(char symbol) { this.symbol = symbol; }
     public char getSymbol() { return symbol; } // Getter
     abstract double apply(double a, double b); // 추상 메서드 선언 : 상수가 메서드 각자 구현. : op.apply(a,b)만 호출하면 연산이 알아서 실행.
 

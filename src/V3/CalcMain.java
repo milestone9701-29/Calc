@@ -5,9 +5,9 @@ public class CalcMain {
         InputHandle input = new InputHandle(calc);
         System.out.println("Calc : Help, List, Del, Clear, Exit");
         while(true) {
-            Double a = input.readNumber("첫 번째 숫자 입력 : (도움말 : Help) :");
+            Double a = input.readNumber("첫 번째 숫자 입력 : (도움말 : Help) : ");
             if (a==null) break;
-            Double b = input.readNumber("두 번째 숫자 입력 : (도움말 : Help) :");
+            Double b = input.readNumber("두 번째 숫자 입력 : (도움말 : Help) : ");
             if (b==null) break;
             OperatorType op = input.readOperator(); // calculator -> calculate -> Enum -> calculate (-> euclideanMod)
             if (op==null) break;

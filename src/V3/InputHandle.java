@@ -17,8 +17,8 @@ public class InputHandle {
     }
 
     public InputHandle(Calculator<?> calc, Scanner sc) { // DI(의존성 주입), null 방어
-        this.calc = Objects.requireNonNull(calc, "Calculator must not be null");
-        this.s = Objects.requireNonNull(sc, "Scanner must not be null");
+        this.calc = Objects.requireNonNull(calc, "Calculator must not be null.");
+        this.s = Objects.requireNonNull(sc, "Scanner must not be null.");
     }
 
     // Help
